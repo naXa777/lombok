@@ -28,12 +28,12 @@ import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.commons.JSRInlinerAdapter;
 
-class AsmUtil {
+public class AsmUtil {
 	private AsmUtil() {
 		throw new UnsupportedOperationException();
 	}
 	
-	static byte[] fixJSRInlining(byte[] byteCode) {
+	public static byte[] fixJSRInlining(byte[] byteCode) {
 		ClassReader reader = new ClassReader(byteCode);
 		ClassWriter writer = new FixedClassWriter(reader, 0);
 		
