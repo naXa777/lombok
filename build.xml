@@ -269,6 +269,7 @@ the common tasks and can be called on to run the main aspects of all the sub-scr
 				<srcdir dir="src/installer" />
 				<srcdir dir="src/delombok" />
 				<srcdir dir="src/stubs" />
+				<srcdir dir="src/hookprocessor" />
 				<srcdir dir="experimental/src" />
 				<srcdir dir="test/transform/src" test="true" />
 				<srcdir dir="test/core/src" test="true" />
@@ -299,6 +300,7 @@ the common tasks and can be called on to run the main aspects of all the sub-scr
 			<srcdir dir="src/installer" />
 			<srcdir dir="src/delombok" />
 			<srcdir dir="src/stubs" />
+			<srcdir dir="src/hookprocessor" />
 			<srcdir dir="experimental/src" />
 			<srcdir dir="test/transform/src" />
 			<srcdir dir="test/core/src" />

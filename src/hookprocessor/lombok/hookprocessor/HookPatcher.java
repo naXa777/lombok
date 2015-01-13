@@ -1,27 +1,21 @@
 package lombok.hookprocessor;
 
-import static lombok.bytecode.AsmUtil.fixJSRInlining;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.apache.tools.ant.taskdefs.Concat;
-import org.objectweb.asm.ClassReader;
-import org.objectweb.asm.ClassVisitor;
-import org.objectweb.asm.ClassWriter;
-import org.objectweb.asm.Handle;
-import org.objectweb.asm.Label;
-import org.objectweb.asm.MethodVisitor;
-import org.objectweb.asm.Opcodes;
-
 import lombok.bytecode.AsmUtil;
 import lombok.bytecode.ClassFileMetaData;
 import lombok.bytecode.PostCompilerApp;
 import lombok.core.DiagnosticsReceiver;
-import lombok.core.PostCompiler;
+
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
 
 import com.zwitserloot.cmdreader.CmdReader;
 import com.zwitserloot.cmdreader.Description;
